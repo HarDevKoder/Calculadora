@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <title>Calculadora 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Titulo Principal del sitio -->
+    <h1 class="tituloPrincipal">CALCULADORA WEB</h1>
+    <hr />
+    <!-- Contenedor General de la Calculadora -->
+    <div class="generalContainer">
+      <!-- Pantalla  -->
+      <div class="pantallaContainer">
+        <input type="text" class="pantalla" id="pantalla" value="0"/>
+      </div>
+      <!-- Teclado -->
+      <div class="botonera">
+
+        <!--  -->
+        <div class="boton">
+          <input
+            type="button"
+            value="AC"
+            class="btn especial"
+            id="borrar"
+            onclick="borrarPantalla()"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="+/-"
+            class="btn especial"
+            id="masmenos"
+            onclick=""
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="%"
+            class="btn especial"
+            id="porcentaje"
+            onclick=""
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="&radic;"
+            class="btn especial"
+            id="raiz"
+            onclick=""
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="7"
+            class="btn"
+            id="siete"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="8"
+            class="btn"
+            id="ocho"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="9"
+            class="btn"
+            id="nueve"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="/"
+            class="btn especial"
+            id="dividir"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="4"
+            class="btn"
+            id="cuatro"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="5"
+            class="btn"
+            id="cinco"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="6"
+            class="btn"
+            id="seis"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="*"
+            class="btn especial"
+            id="multi"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="1"
+            class="btn"
+            id="uno"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="2"
+            class="btn"
+            id="dos"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="3"
+            class="btn"
+            id="tres"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="-"
+            class="btn especial"
+            id="restar"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="0"
+            class="btn"
+            id="cero"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="."
+            class="btn"
+            id="punto"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="+"
+            class="btn especial"
+            id="sumar"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            value="="
+            class="btn especial"
+            id="igual"
+            onclick="detectarTecla(this.value)"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
